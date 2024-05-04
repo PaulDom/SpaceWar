@@ -8,7 +8,7 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        gameObject.transform.position = (Vector2)transform.position + Vector2.down * speed * Time.deltaTime;
+        gameObject.transform.position = (Vector2)transform.position + Vector2.down * speed * GameController.gameSpeed * Time.deltaTime;
     }
 
     void Start()
